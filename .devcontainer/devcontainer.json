@@ -1,0 +1,13 @@
+{
+  "name": "Codespace Superset",
+    "postAttachCommand": {
+      "server": "cd superset && git submodule init && git submodule update && docker compose -f docker-compose-non-dev.yml pull && docker compose -f docker-compose-non-dev.yml up"
+    },
+    "portsAttributes": {
+        "8088": {
+            "label": "Application",
+            "onAutoForward": "openBrowser"
+        }
+    }
+  }
+  
