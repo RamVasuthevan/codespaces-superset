@@ -1,5 +1,4 @@
 {
-    "name": "Apache Superset Development",
     "postAttachCommand": {
       "server": "cd superset && git submodule init && git submodule update && docker compose -f docker-compose-non-dev.yml pull && docker compose -f docker-compose-non-dev.yml up"
     },
