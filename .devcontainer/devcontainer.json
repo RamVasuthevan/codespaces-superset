@@ -1,0 +1,13 @@
+{
+    "name": "Apache Superset Development",
+    "postAttachCommand": {
+      "server": "cd superset && docker compose -f docker-compose-non-dev.yml pull && docker compose -f docker-compose-non-dev.yml up"
+    },
+    "portsAttributes": {
+        "8088": {
+            "label": "Application",
+            "onAutoForward": "openBrowser"
+        }
+    }
+  }
+  
